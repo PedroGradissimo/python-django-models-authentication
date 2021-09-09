@@ -1,78 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="tests.PostTestCase-20210909235055" tests="12" file="tests.py" time="0.072" timestamp="2021-09-09T23:50:55" failures="3" errors="0" skipped="0">
-		<testcase classname="tests.PostTestCase" name="test_task11_admin_register_tag" time="0.004" timestamp="2021-09-09T23:50:55" file="module4\tests.py" line="258">
+	<testsuite name="tests.PostTestCase-20210909235908" tests="12" file="tests.py" time="0.034" timestamp="2021-09-09T23:59:08" failures="0" errors="0" skipped="0">
+		<testcase classname="tests.PostTestCase" name="test_task10_uncomment_templates" time="0.019" timestamp="2021-09-09T23:59:08" file="module4\tests.py" line="246">
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task1_tag_model_exists" time="0.005" timestamp="2021-09-09T23:50:55" file="module4\tests.py" line="114">
-			<system-out><![CDATA[list index out of range
-]]></system-out>
-			<system-err><![CDATA[]]></system-err>
-		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task2_clean_method_exists" time="0.004" timestamp="2021-09-09T23:50:55" file="module4\tests.py" line="125">
-			<system-out><![CDATA[list index out of range
-]]></system-out>
-			<system-err><![CDATA[]]></system-err>
-		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task3_str_exists" time="0.003" timestamp="2021-09-09T23:50:55" file="module4\tests.py" line="132">
-			<system-out><![CDATA[list index out of range
-]]></system-out>
-			<system-err><![CDATA[]]></system-err>
-		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task4_many_to_many_exists" time="0.001" timestamp="2021-09-09T23:50:55" file="module4\tests.py" line="136">
-			<system-out><![CDATA[list index out of range
-]]></system-out>
-			<system-err><![CDATA[]]></system-err>
-		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task5_tag_view" time="0.001" timestamp="2021-09-09T23:50:55" file="module4\tests.py" line="192">
+		<testcase classname="tests.PostTestCase" name="test_task11_admin_register_tag" time="0.003" timestamp="2021-09-09T23:59:08" file="module4\tests.py" line="258">
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task6_tag_view_title" time="0.001" timestamp="2021-09-09T23:50:55" file="module4\tests.py" line="198">
+		<testcase classname="tests.PostTestCase" name="test_task12_make_migrations" time="0.003" timestamp="2021-09-09T23:59:08" file="module4\tests.py" line="282">
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task7_tag_view_find_posts" time="0.001" timestamp="2021-09-09T23:50:55" file="module4\tests.py" line="203">
+		<testcase classname="tests.PostTestCase" name="test_task1_tag_model_exists" time="0.002" timestamp="2021-09-09T23:59:08" file="module4\tests.py" line="114">
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task8_add_tag_url" time="0.001" timestamp="2021-09-09T23:50:55" file="module4\tests.py" line="209">
+		<testcase classname="tests.PostTestCase" name="test_task2_clean_method_exists" time="0.001" timestamp="2021-09-09T23:59:08" file="module4\tests.py" line="125">
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task10_uncomment_templates" time="0.038" timestamp="2021-09-09T23:50:55" file="module4\tests.py" line="246">
-			<failure type="AssertionError" message="There is still a `{% comment %}` tag in `mainapp/templates/mainapp/post.html`"><![CDATA[Traceback (most recent call last):
-  File "C:\Users\Pedro\Documents\GitHub\python-django-models-authentication\module4\tests.py", line 255, in test_task10_uncomment_templates
-    self.assertTrue(not comment_found, msg="There is still a `{% comment %}` tag in `" + filename + "`")
-  File "C:\Users\Pedro\Documents\GitHub\python-django-models-authentication\support\SimplerTestCase.py", line 12, in assertTrue
-    self.fail(msg or (str(expr) + "is not True"))
-AssertionError: There is still a `{% comment %}` tag in `mainapp/templates/mainapp/post.html`
-]]></failure>
+		<testcase classname="tests.PostTestCase" name="test_task3_str_exists" time="0.001" timestamp="2021-09-09T23:59:08" file="module4\tests.py" line="132">
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task12_make_migrations" time="0.011" timestamp="2021-09-09T23:50:55" file="module4\tests.py" line="282">
-			<failure type="AssertionError" message="Did you use `manage.py makemigrations` to create the `Tag` migrations file? Don't forget to `add` it to the git repo."><![CDATA[Traceback (most recent call last):
-  File "C:\Users\Pedro\Documents\GitHub\python-django-models-authentication\module4\tests.py", line 285, in test_task12_make_migrations
-    self.assertTrue(self.check_migration('mainapp/migrations/', 'Tag'), msg=msg)
-  File "C:\Users\Pedro\Documents\GitHub\python-django-models-authentication\support\SimplerTestCase.py", line 12, in assertTrue
-    self.fail(msg or (str(expr) + "is not True"))
-AssertionError: Did you use `manage.py makemigrations` to create the `Tag` migrations file? Don't forget to `add` it to the git repo.
-]]></failure>
+		<testcase classname="tests.PostTestCase" name="test_task4_many_to_many_exists" time="0.001" timestamp="2021-09-09T23:59:08" file="module4\tests.py" line="136">
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task9_url_reverser" time="0.002" timestamp="2021-09-09T23:50:55" file="module4\tests.py" line="236">
-			<failure type="AssertionError" message="In `get_absolute_url()` the second argument in `reverse()` should be `args=[str(self.name)]`."><![CDATA[Traceback (most recent call last):
-  File "C:\Users\Pedro\Documents\GitHub\python-django-models-authentication\module4\tests.py", line 244, in test_task9_url_reverser
-    self.assertTrue(self.get_absolute_url_args_correct, msg="In `get_absolute_url()` the second argument in `reverse()` should be `args=[str(self.name)]`.")
-  File "C:\Users\Pedro\Documents\GitHub\python-django-models-authentication\support\SimplerTestCase.py", line 12, in assertTrue
-    self.fail(msg or (str(expr) + "is not True"))
-AssertionError: In `get_absolute_url()` the second argument in `reverse()` should be `args=[str(self.name)]`.
-]]></failure>
-			<system-out><![CDATA[list index out of range
-]]></system-out>
+		<testcase classname="tests.PostTestCase" name="test_task5_tag_view" time="0.001" timestamp="2021-09-09T23:59:08" file="module4\tests.py" line="192">
+			<system-out><![CDATA[]]></system-out>
+			<system-err><![CDATA[]]></system-err>
+		</testcase>
+		<testcase classname="tests.PostTestCase" name="test_task6_tag_view_title" time="0.001" timestamp="2021-09-09T23:59:08" file="module4\tests.py" line="198">
+			<system-out><![CDATA[]]></system-out>
+			<system-err><![CDATA[]]></system-err>
+		</testcase>
+		<testcase classname="tests.PostTestCase" name="test_task7_tag_view_find_posts" time="0.001" timestamp="2021-09-09T23:59:08" file="module4\tests.py" line="203">
+			<system-out><![CDATA[]]></system-out>
+			<system-err><![CDATA[]]></system-err>
+		</testcase>
+		<testcase classname="tests.PostTestCase" name="test_task8_add_tag_url" time="0.000" timestamp="2021-09-09T23:59:08" file="module4\tests.py" line="209">
+			<system-out><![CDATA[]]></system-out>
+			<system-err><![CDATA[]]></system-err>
+		</testcase>
+		<testcase classname="tests.PostTestCase" name="test_task9_url_reverser" time="0.001" timestamp="2021-09-09T23:59:08" file="module4\tests.py" line="236">
+			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
 	</testsuite>
